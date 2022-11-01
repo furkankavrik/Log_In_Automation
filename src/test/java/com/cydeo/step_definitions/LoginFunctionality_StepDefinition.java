@@ -27,6 +27,7 @@ public class LoginFunctionality_StepDefinition {
     @When("user enters username {string}")
     public void user_enters_username(String string) {
         loginPage.username_box.sendKeys(string);
+        //System.out.println(Driver.getDriver().getTitle());
     }
     @When("user enters password {string}")
     public void user_enters_password(String string2) {
@@ -45,7 +46,7 @@ public class LoginFunctionality_StepDefinition {
 
     @When("User clicks log out button")
     public void user_clicks_log_out_button() {
-        //System.out.println("complete me");
+        //System.out.println(Driver.getDriver().getTitle());
         dashboardPage.account_button.click();
         dashboardPage.logout_button.click();
     }
@@ -120,6 +121,7 @@ public class LoginFunctionality_StepDefinition {
     public void user_should_see_placeholder_on_password_fields(String string) {
         Assert.assertEquals(string, loginPage.password_box.getAttribute("placeholder"));
     }
+
 
 
 }
