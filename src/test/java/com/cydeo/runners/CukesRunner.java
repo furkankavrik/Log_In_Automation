@@ -13,13 +13,14 @@ import org.junit.runner.RunWith;
                 //"json/target/cucumber.json",
                 "html:target/cucumber-report.html",
                 "rerun:target/rerun.txt",
+                "me.jvt.cucumber.report.PrettyReports:target/cucumber"
 
 
         },
         features = "src/test/resources/features",
         glue = "com/cydeo/step_definitions",
         dryRun = false,
-        tags = "@wip"
+        tags = "@completed" //  @completed
         //publish = true
 
 )

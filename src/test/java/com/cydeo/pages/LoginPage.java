@@ -23,8 +23,11 @@ public class LoginPage {
     @FindBy(xpath = "//img[@src='/core/img/actions/toggle.svg']")
     public WebElement eye_button;
 
+    @FindBy(xpath = "//p[@class='warning wrongPasswordMsg']")
+    public WebElement credential_warning;
 
-
+    @FindBy(xpath = "//*[@id='lost-password']")
+    public WebElement forgot_password_link;
 
 
 
